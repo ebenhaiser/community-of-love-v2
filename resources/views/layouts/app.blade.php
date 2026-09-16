@@ -25,6 +25,7 @@
         <!-- START: Top Navbar Component -->
         <x-layouts::app.navbar />
         <!-- END: Top Navbar Component -->
+        {{-- <x-page-component.header :title="$title" :subtitle="$subtitle" :mainTitle="$mainTitle" /> --}}
 
         {{ $slot ??= '' }}
 

@@ -8,6 +8,9 @@ use Livewire\WithPagination;
 new class extends Component
 {
     use WithPagination;
+    public string $title = 'Cool';
+    public string $subtitle = 'Manage Cool';
+    public string $mainTitle = 'Master';
 
     #[Url(as: 'q', except: '')]
     public string $search = '';
@@ -45,5 +48,10 @@ new class extends Component
                 ->latest()
                 ->paginate(10),
         ]);
+    }
+
+    public function create()
+    {
+        // return redirect()->route('master.cools.create');
     }
 };

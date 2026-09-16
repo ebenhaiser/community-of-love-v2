@@ -15,7 +15,7 @@
                     <a href="{{ route('master.users.index') }}"
                         class="sidebar-menu-link {{ Route::currentRouteName() === 'master.users.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-person-circle"></i>
                         <span>User</span>
                     </a>
                 </li>
@@ -23,7 +23,7 @@
                     <a href="{{ route('master.cools.index') }}"
                         class="sidebar-menu-link {{ Route::currentRouteName() === 'master.cools.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-people-fill"></i>
                         <span>Cool</span>
                     </a>
                 </li>
@@ -31,7 +31,7 @@
                     <a href="{{ route('master.members.index') }}"
                         class="sidebar-menu-link {{ Route::currentRouteName() === 'master.members.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-person-vcard"></i>
                         <span>Member</span>
                     </a>
                 </li>
@@ -39,7 +39,7 @@
                     <a href="{{ route('master.event-types.index') }}"
                         class="sidebar-menu-link {{ Route::currentRouteName() === 'master.event-types.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-calendar-event"></i>
                         <span>Event Type</span>
                     </a>
                 </li>
@@ -47,7 +47,7 @@
                     <a href="{{ route('master.ref-settings.index') }}"
                         class="sidebar-menu-link {{ Route::currentRouteName() === 'master.ref-settings.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-gear-fill"></i>
                         <span>Reference Settings</span>
                     </a>
                 </li>

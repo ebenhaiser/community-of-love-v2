@@ -15,6 +15,11 @@
             {{-- Filter --}}
             <div class="table-filter-group">
 
+                <button class="btn-quick-action" wire:click="create()" type="button">
+                    <i class="bi bi-plus-lg"></i>
+                    <span>Create</span>
+                </button>
+
                 <div class="dropdown">
                     <button class="btn-table-action dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         <i class="bi bi-funnel"></i>
