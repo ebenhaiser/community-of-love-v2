@@ -23,9 +23,15 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             RoleSeeder::class,
+
+            UserSeeder::class,
+            MasterUserSeeder::class,
+
+            CoolSeeder::class,
+            CoolGembalaSeeder::class,
+
             EventTypeSeeder::class,
             RefSettingSeeder::class,
-            MasterUserSeeder::class,
         ]);
     }
 }

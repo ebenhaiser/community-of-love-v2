@@ -12,38 +12,43 @@
             <div class="sidebar-menu-title">Menu</div>
             <ul class="sidebar-menu-list">
                 <li class="sidebar-menu-item">
-                    <a href="{{ route('master.users.index') }}" class="sidebar-menu-link active" id="menu-overview"
-                        title="Overview">
-                        <i class="bi bi-grid-fill"></i>
-                        <span>users</span>
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="{{ route('master.cools.index') }}" class="sidebar-menu-link active" id="menu-overview"
-                        title="Overview">
-                        <i class="bi bi-grid-fill"></i>
-                        <span>cools</span>
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="{{ route('master.members.index') }}" class="sidebar-menu-link active" id="menu-overview"
-                        title="Overview">
-                        <i class="bi bi-grid-fill"></i>
-                        <span>members</span>
-                    </a>
-                </li>
-                <li class="sidebar-menu-item">
-                    <a href="{{ route('master.event-types.index') }}" class="sidebar-menu-link active"
+                    <a href="{{ route('master.users.index') }}"
+                        class="sidebar-menu-link {{ Route::currentRouteName() === 'master.users.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
                         <i class="bi bi-grid-fill"></i>
-                        <span>event-type</span>
+                        <span>User</span>
                     </a>
                 </li>
                 <li class="sidebar-menu-item">
-                    <a href="{{ route('master.ref-settings.index') }}" class="sidebar-menu-link active"
+                    <a href="{{ route('master.cools.index') }}"
+                        class="sidebar-menu-link {{ Route::currentRouteName() === 'master.cools.index' ? 'active' : '' }}"
                         id="menu-overview" title="Overview">
                         <i class="bi bi-grid-fill"></i>
-                        <span>ref-settings</span>
+                        <span>Cool</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="{{ route('master.members.index') }}"
+                        class="sidebar-menu-link {{ Route::currentRouteName() === 'master.members.index' ? 'active' : '' }}"
+                        id="menu-overview" title="Overview">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Member</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="{{ route('master.event-types.index') }}"
+                        class="sidebar-menu-link {{ Route::currentRouteName() === 'master.event-types.index' ? 'active' : '' }}"
+                        id="menu-overview" title="Overview">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Event Type</span>
+                    </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="{{ route('master.ref-settings.index') }}"
+                        class="sidebar-menu-link {{ Route::currentRouteName() === 'master.ref-settings.index' ? 'active' : '' }}"
+                        id="menu-overview" title="Overview">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Reference Settings</span>
                     </a>
                 </li>
             </ul>
