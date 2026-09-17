@@ -11,7 +11,7 @@
          START: Sidebar Component
          Highly polished, dark-green sticky navigation
          ========================================== -->
-    <x-layouts::app.sidebar />
+    {{-- <x-layouts::app.sidebar /> --}}
     <!-- ==========================================
          END: Sidebar Component
          ========================================== -->
@@ -25,7 +25,7 @@
         <!-- START: Top Navbar Component -->
         <x-layouts::app.navbar />
         <!-- END: Top Navbar Component -->
-        {{-- <x-page-component.header :title="$title" :subtitle="$subtitle" :mainTitle="$mainTitle" /> --}}
+        <x-layouts::app.page-header :title="$title" :subtitle="$subtitle" :mainTitle="$mainTitle" />
 
         {{ $slot ??= '' }}
 

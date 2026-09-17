@@ -8,8 +8,8 @@
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted-green">Home</a>
                 </li>
-                @if ($mainTitle)
-                    <li class="breadcrumb-item text-muted-green">{{ $mainTitle ??= "Main Title" }}</li>
+                @if ($breadcrumbItem)
+                    <li class="breadcrumb-item text-muted-green">{{ $breadcrumbItem ??= "Main Title" }}</li>
                 @endif
                 <li class="breadcrumb-item active text-main" aria-current="page">{{ $title ??= "Title" }}</li>
             </ol>
